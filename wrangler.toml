@@ -5,18 +5,6 @@ compatibility_date = "2024-09-01"
 name = "katelyatv"
 
 [env.production.vars]
-
-
-# 管理员账号
-# USERNAME = admin
-# PASSWORD = gpb888990abmin
-
-# 存储配置
-# NEXT_PUBLIC_STORAGE_TYPE = d1
-
-# 功能开关
-NEXT_PUBLIC_ENABLE_REGISTER = true
-
 # 存储类型配置
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
 
@@ -63,5 +51,3 @@ environment = { NODE_VERSION = "18" }
 [[build.environment_variables]]
 name = "NPM_FLAGS"
 value = "--prefix=/opt/buildhome/.asdf/installs/nodejs/18.17.1/.npm"
-
-
