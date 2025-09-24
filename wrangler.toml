@@ -5,6 +5,18 @@ compatibility_date = "2024-09-01"
 name = "katelyatv"
 
 [env.production.vars]
+
+
+# 管理员账号
+# USERNAME = admin
+# PASSWORD = gpb888990abmin
+
+# 存储配置
+# NEXT_PUBLIC_STORAGE_TYPE = d1
+
+# 功能开关
+NEXT_PUBLIC_ENABLE_REGISTER = true
+
 # 存储类型配置
 NEXT_PUBLIC_STORAGE_TYPE = "d1"
 
@@ -42,7 +54,7 @@ NODE_ENV = "production"
 [[env.production.d1_databases]]
 binding = "DB"
 database_name = "katelyatv-db"
-database_id = "your-d1-database-id-here"
+database_id = "5ffee29a-c136-4e1f-bef7-7f9870c9ddb3"
 
 [build]
 command = "pnpm pages:build"
@@ -51,3 +63,5 @@ environment = { NODE_VERSION = "18" }
 [[build.environment_variables]]
 name = "NPM_FLAGS"
 value = "--prefix=/opt/buildhome/.asdf/installs/nodejs/18.17.1/.npm"
+
+
